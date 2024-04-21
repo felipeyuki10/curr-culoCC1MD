@@ -2,105 +2,149 @@
 <hmtl lang="en">
 
     <head>
-        <title>Aula</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio Felipe</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
     <body>
-        <h1>Felipe Gumiero Yuki</h1>
-        <hr />
-        <img width="200px" src="fotominha.jpeg" alt="foto">
 
 
-        <h2>Sobre mim</h2>
-        <ul>
-            <li>Idade: 18 anos</li>
-            <li>Cursando: Ciencia da computação UVV</li>
-            <li>Telefone: (27)99784-2997</li>
-            <li>Endereço: Av carlos moreira lima, 855</li>
-            <li>Email: felipeyuki10@gmail.com</li>
-        </ul>
-        <hr />
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src ="logo.png" alt="logo FY"
+                    width="200px";
+                    height="200px";
+                    >
+                </a>
+            </div><!--Logo da pagina-->
 
-        <h2>Experiencia profissional</h2>
-        <ul>
-            <li>Barista na TreCaffe</li>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre mim</a></li>
+                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#">Pontos fortes</a></li>
+                </ul>
+            </nav><!--navegação-->
 
-        </ul>
-        <hr />
+            <div class="botãoctt">
+                <a href="#">
+                    <button>Contato</button> 
+                </a>
+            </div><!--contato-->
 
-        <h2>Pontos fortes</h2>
-        <ul>
-            <li>Ingles</li>
-            <li>Facilidade de aprendizado</li>
-            <li>Facilidade de trabalhar em grupo</li>
-        </ul>
+        </div><!--interface-->
+        
+    </header>
 
-        <h2>Contato: </h2>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/felipeyuki10/" target="_blank">Instagram</a>
-            </li>
-            <li>
-                <a href="https://br.linkedin.com/in/felipe-gumiero-yuki-7280122b2?trk=people-guest_people_search-card" target="_blank">linkedin</a>
-            </li>
-        </ul>
+    <main>
+        <section class="toposite">
+            <div class="interface">
+                <div class="flex">
+                    <div class="textotoposite">
+                        <h1>Sobre mim</h1>
+                        <p>Me chamo Felipe Gumiero Yuki, tenho 18 anos, moro em Vitória–ES, e atualmente curso ciência da computação na Universidade de Vila Velha(UVV). Sou um garoto que visa se tornar um programador de sucesso, e estou sempre fazendo o melhor para que isso se torne possível.</p>
+                    </div><!--txt-toposite-->    
 
-        <h2>Formulário</h2>
-        <form action="#">
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email">
-            <br>
-            <label for="mensagem">mensagem</label>
-            <br>
-            <textarea name="mensagem" cols="50" rows="20"></textarea>
-            <br>
-            <label for="date">Data de nasimento</label>
-            <br>
-            <input type="date" name="data de nascimento">
-            <br>
-            <label for="file">Arquivo</label>
-            <br>
-            <input type="file" name="Envie seu arquivo">
-        </form>
+                        <div class="imagemtopo">
+                            <img src="fotofy.jpeg" alt="foto felipe yuki"></div>
+                        </div><!--imgtopo-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--toposite-->
 
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">PONTOS FORTES</h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>Trabalho em grupo</h3>
+                        <p>Facilidade de lidar com pessoas e trabalhar na resolução de problemas e projetos em grupo, para um ambiente colaborativo e produtivo, onde todos os membros se sintam valorizados e motivados a alcançar os objetivos comuns de forma eficiente e satisfatória.</p>
+                    </div>
+
+                <div class="especialidades-box">
+                    <i class="bi bi-book"></i>
+                    <h3>Facilidade de aprendizado</h3>
+                    <p>Capacidade de aprender coisas novas com facilidade, permitindo uma rápida adaptação a novas situações e desafios, e promovendo um crescimento contínuo tanto pessoal quanto profissional.</p>
+                </div>
+
+                <div class="especialidades-box">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    <h3>Proatividade</h3>
+                    <p>Sou uma pessoa proativa,sempre buscando antecipar necessidades, identificar oportunidades de melhoria e agir de forma diligente para alcançar os objetivos estabelecidos, tanto individualmente quanto em equipe.</p>
+                </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-sobre">
+                        <h2>OBJETIVOS</h2>
+                        <ul>
+                            <li>Adquirir um sólido entendimento dos fundamentos da computação</li>
+                            <li>Explorar as diversas áreas presentes no universo da ciência da programação</li>
+                            <li>Aprimorar e desenvolver novas habilidades práticas de programação</li>
+                            <li>Criar uma rede de contatos profissionais (Networking)</li>
+                            <li>Me manter preparado para o mercado profissional</li>
+                        </ul>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/felipeyuki10/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/felipeyuki10"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/felipe-gumiero-yuki-7280122b2/"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btnsocial-->
+                    </div><!--txtsobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2>FALE COMIGO</h2>
+
+                <form action="">
+                    <input type="text" placeholder="Seu nome completo:">
+                    <input type="text" placeholder="Seu email:">
+                    <input type="text" placeholder="Telefone:">
+                    <textarea placeholder="Deixe sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+   
     <hr/>
 
-        <table border="1">
+        <table border ="1">
             <thead>
-                <th>Nome</th>
-                <th>idade</th>
-                <th>escolaridade</th>
-                <th>obs</th>
+                <th>Cursos</th>
+                <th>Status</th>
             </thead>
 
             <tbody>
                 <tr>
-                    <td>Felipe</td>
-                    <td>18</td>
-                    <td>3° enino medio</td>
-                    <td rowspan="4">FTV</td>
+                    <td>ABAP 000</td>
+                    <td>Cursando</td>
                 </tr>
 
                 <tr>
-                    <td>Felipe</td>
-                    <td>17</td>
-                    <td>2° ensino medio</td>
+                    <td>CS50</td>
+                    <td>Cursando</td>
                 </tr>
 
                 <tr>
-                    <td>Felipe</td>
-                    <td>16</td>
-                    <td>1° ensino medio</td>
+                    <td>The complete development bootcamp 2024</td>
+                    <td>Cursando</td>
                 </tr>
             </tbody>
 
-            <tfoot>
-                <tr>
-                    <td colspan="4">MAFUTE</td>
-                </tr>
-            </tfoot>
         </table>
 
 

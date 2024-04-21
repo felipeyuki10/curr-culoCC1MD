@@ -1,63 +1,248 @@
 
-* {@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
-    
+* {@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
+/* GERAL STYLE */
 html{
     background-color: black;
 }
 
-h1{
-    color: white;
+.interface{
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* estilo do cabeçalho */
+header{
+    padding: 25px 4%;
+}
+
+header > .interface{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:0 80px;
+}
+
+header .botãoctt button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30%;
+    border: 0;
+    cursor:pointer;
+}
+
+header .botãoctt button :hover{
+    box-shadow: 0px 0px 8px #fcfcfc;
+}
+
+header a{
+    color:darkgray;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color:white;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* estilo do topo do site(corpo) */
+section.toposite{
+    padding: 40px 4%;
+
+}
+
+section.toposite .flex{
+    align-items: center;
+    justify-content:center;
+}
+
+.toposite h1{
+    color:greenyellow;
+    font-size: 45px;
+    margin: 40px 0;
+
+}
+
+.toposite .textotoposite p{
+    color:white;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.toposite .imagemtopo img{
+    margin:100px;
+    border:1px solid greenyellow;
+    margin-left: 450px;
+}
+
+/* estilo especialidades */
+section .especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap:60px
+}
+
+h2.titulo{
+    color: greenyellow;
+    font-size: 35px;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings:
-    "width" 100;
+    padding: 40px;
+    box-shadow: 0 0 2px greenyellow;
 }
 
-h2{
-    color: white;
+.especialidades .especialidades-box{
+    color:white;
+    padding:40px;
+    border:1.5px solid greenyellow;
+    border-radius: 20px;
+    margin: 30px;
 }
 
-ul{
-    color: white;
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+    transition: 2s;
 }
 
-li{
-    color: white;
+
+.especialidades .especialidades-box i{
+    font-size: 60px;
+    color:greenyellow;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 30px;
+    margin:15px 0;
+}
+
+/* Estilo do sobre */
+section.sobre{
+    padding:40px 4%;
+
+}
+
+.sobre li{
+    color:white;
+    font-size: 20px;
+    margin-left:50px;
+    margin:10px;
+    line-height: 30px;
+}
+
+.sobre h2{
+    color:greenyellow;
+    font-size: 35px;
+    padding: 200px;
+    margin-bottom: -170px;
+    margin-left: -50px;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    background-color: greenyellow;
+    font-size: 25px;
+    cursor: pointer;
+    margin:15px 8px;
+}
+
+.btn-social button :hover{
+    box-shadow: 0 0 8px greenyellow;
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+/* Estilo do formulario */
+section.formulario{
+    padding:80px 4%;
 }
 
 form{
-    color: white;
+    max-width: 500px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
-tr{
+section.formulario h2{
+    color: greenyellow;
+    font-size: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    border:0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
     color:white;
-}
-img{
-    margin-left: 850px;
+    font-size: 18px;
 }
 
-img{
-    height: 450px;
-    width: 200px;
+form textarea{
+    resize: none;
+    max-height:300px;
 }
 
-a{
-    color:greenyellow
+form .btn-enviar{
+    margin-top: 23px;
 }
 
+form .btn-enviar input{
+    width: 120px;
+    text-align: center;
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 190px;
+}
+
+/* TABLE */
 table{
-    border: 2px solid white;
+    border: 2px solid greenyellow;
     height:300px;
     width: 800px;
     text-align: center;
     margin-top: 40px;
     margin-left: 25%;
+    padding: 30px;
 }
 
+thead{
+    color: white;
+}
 
+tbody{
+    color: white;
+}
+
+table .border{
+    padding: 20px;
+}
